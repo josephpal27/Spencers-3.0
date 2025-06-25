@@ -3,3 +3,188 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Import custom ArialMTLight font */
+@font-face {
+  font-family: 'ArialMTLight';
+  src: url('../fonts/ARIALMTLIGHT.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'ArialMTLight', Arial, sans-serif;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+/* Login Page Styles Start Here */
+.login-bg{
+    min-height: 100vh;
+    background: linear-gradient(to right, #0b0b09 35%, #1b1918);
+    padding: 3rem 20%;
+}
+.login-bg .login-container{
+    background-color: #0f0d0a;
+    padding: 2.5rem 5rem 4rem 5rem; 
+    border-radius: 2rem;
+    box-shadow: 
+    -10px 18px 35px 0 #000, /* left-bottom black with blur */
+    2px -1.5px 6px 0 #808080; /* top-right grey, small blur */
+}
+.login-bg .login-container .logo{
+    display: flex;
+    justify-content: center;
+}
+.login-bg .login-container .logo img{
+    width: 300px;
+}
+.login-bg .login-container .login-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.login-bg .login-container a{
+    text-decoration: none;
+    color: #bfa274;
+    font-weight: 600;
+    font-size: calc(0.8rem + 0.5vw);
+}
+.login-bg .login-container a:hover{
+    text-decoration: underline;
+}
+.login-bg .login-form form{
+    margin-top: 2.5rem;
+}
+.login-bg .login-form form .input-box{
+    margin-bottom: 1rem;
+}
+.login-bg .login-form form input,
+.login-bg .login-form form button{
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    background-color: #0a0a08;
+    color: #bfa274;
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 600;
+    border: 2px solid #614e2f;
+}
+.login-bg .login-form form input::placeholder{
+    color: #bfa274;
+}
+.login-bg .login-form form input:focus{
+    outline: 2px solid #614e2f;
+}
+.login-bg .login-form form input::-webkit-inner-spin-button{
+    display: none;
+}
+.login-bg .login-form form #input-box-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.login-bg .login-form form #input-box-2 input{
+    width: 70%;
+}
+.login-bg .login-form form #input-box-2 button{
+    width: 28%;
+    border: 2.4px solid #7a633e;
+    background-color: #13120e;
+    padding: 1.2rem 0;
+}
+.login-bg .login-form form button[type="submit"]{
+    background: linear-gradient(to right, #b58441 55%, #f3d192);
+    color: #1b1b1b;
+    border: none;
+    font-size: calc(1.2rem + 0.5vw);
+}
+.login-bg .login-form form button[type="submit"]:hover{
+    background: linear-gradient(to right, #f3d192 10%, #b58441 50%);
+}
+.login-bg .login-bottom-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-top: 1.5rem;
+}
+.login-bg .login-bottom-text p{
+    color: #bfa274;
+    font-size: calc(0.5rem + 0.5vw);
+    margin: 0;
+}
+.login-bg .login-bottom-text i{
+    margin-right: 5px;
+}
+
+/* For Small Screens */
+@media screen and (max-width: 767px){
+    .login-bg{
+        padding: 3.5rem 1.7rem;
+    }
+    .login-bg .login-container{
+        padding: 1rem 1.3rem 2rem 1.3rem; 
+    }
+    .login-bg .login-container .logo img{
+        width: 220px;
+    }
+    .login-bg .login-container .login-title{
+        margin-top: 1.2rem;
+    }
+    .login-bg .login-container a{
+        font-size: calc(0.9rem + 0.5vw);
+    }
+
+    .login-bg .login-form form{
+        margin-top: 1.5rem;
+    }
+    .login-bg .login-form form .input-box{
+        margin-bottom: 0.9rem;
+    }
+    .login-bg .login-form form input,
+    .login-bg .login-form form button{
+        padding: 1rem 1rem;
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .login-bg .login-form form input:focus{
+        outline: 1.5px solid #614e2f;
+    }
+    .login-bg .login-form form #input-box-2{
+        margin-bottom: 1.8rem;
+    }
+    .login-bg .login-form form #input-box-2 input{
+        width: 59%;
+    }
+    .login-bg .login-form form #input-box-2 button{
+        width: 36.5%;
+        border: 2px solid #7a633e;
+        padding: 1rem 0;
+    }
+    .login-bg .login-form form button[type="submit"]{
+        font-size: calc(1.2rem + 0.5vw);
+        padding: 0.8rem 1rem;
+    }
+    .login-bg .login-bottom-text{
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0.5rem;
+        margin-top: 1.5rem;
+    }
+    .login-bg .login-bottom-text p{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-bottom: 0.4rem;
+    }
+    .login-bg .login-bottom-text i{
+        margin-right: 4px;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 767px){
+    .login-bg{
+        padding: 5.5rem 1.7rem 3rem;
+    }
+}
+/* Login Page Styles End Here */
+
+/* ----------------------------------------------------------------------------- */
