@@ -182,7 +182,7 @@ body {
 
 @media screen and (min-width: 420px) and (max-width: 767px){
     .login-bg{
-        padding: 5.5rem 1.7rem 3rem;
+        padding: 6rem 1.7rem 3rem;
     }
 }
 /* Login Page Styles End Here */
