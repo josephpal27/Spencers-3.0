@@ -484,3 +484,247 @@ body {
 /* SignUp Page Styles End Here */
 
 /* ----------------------------------------------------------------------------- */
+
+/* Home Page Styles Start Here */
+.home-bg{
+    min-height: 100vh;
+    background-color: #11110f;
+    padding: 3rem 20% 0 20%;
+}
+.home-head .logo{
+    display: flex;
+    justify-content: center;
+}
+.home-head .logo img{
+    width: 300px;
+}
+.home-head h1{
+    font-size: calc(1rem + 0.5vw);
+    font-weight: 600;
+    color: #bfa274;
+    margin-top: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 2px #bfa274c6, 0 0 2px #bfa274ba;
+}
+.home-bg .member-card{
+    background-color: #0c0c0c;
+    padding: 3rem; 
+    border-radius: 1.5rem;
+    border: 3px solid #614e2f;
+    margin-top: 2rem;
+}
+.home-bg .member-card .member-card-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.home-bg .member-card .member-card-row:last-child{
+    margin-bottom: 0;
+}
+.home-bg .member-card .member-card-row i{
+    color: #80673d;
+    font-size: calc(1rem + 0.5vw);
+    margin-right: 1rem;
+}
+.home-bg .member-card .member-card-row h2{
+    color: #bfa274;
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 600;
+    margin: 0;
+}
+.home-bg .member-card .member-card-row span{
+    color: #8f7548;
+    margin-left: 1.5rem;
+    font-size: calc(0.9rem + 0.5vw);
+}
+.home-bg .spend-card{
+    padding: 0;
+    padding-top: 3rem;
+    overflow: hidden;
+}
+.home-bg .spend-card .member-card-row{
+    padding: 0 3rem;
+}
+.home-bg .spend-card .spend-tracker{
+    background-color: #000;
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.home-bg .spend-card .spend-tracker .tracker-box{
+    width: 33.2%;
+}
+.home-bg .spend-card .spend-tracker .tracker-box h3{
+    color: #a68a5d;
+    font-weight: 600;
+    font-size: calc(0.6rem + 0.5vw);
+    margin-bottom: 0.7rem;
+}
+.home-bg .spend-card .spend-tracker .tracker-box:first-child .tier-line{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.home-bg .spend-card .spend-tracker .tracker-box:last-child .tier-line{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.home-bg .spend-card .spend-tracker .tier-line{
+    background: #30302f;
+    padding: 0.3rem 0;
+}
+.home-bg .spend-card .spend-tracker .tier-line span{
+    color: #bfa274;
+    font-weight: 600;
+    font-size: calc(0.5rem + 0.5vw);
+}
+.home-bg .spend-card .spend-tracker .tier-line.active{
+    background: linear-gradient(to right, #ebc676 10%, #9a6f2b);
+}
+.home-bg .spend-card .spend-tracker .tier-line.active span{
+    color: #000;
+}
+.home-bg .spend-card .spend-tracker .tracker-box p{
+    color: #bfa274;
+    font-weight: 600;
+    font-size: calc(0.7rem + 0.5vw);
+    margin: 0;
+    margin-top: 0.6rem;
+}
+.home-bg .spend-card .tracker-foot{
+    background-color: #000;
+    padding: 0 0 1rem 0;
+}
+.home-bg .spend-card .tracker-foot p{
+    margin: 0;
+    text-align: center;
+    color: #bfa274;
+    font-size: calc(0.5rem + 0.5vw);
+}
+.home-bg .cts-btns{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.home-bg .cts-btns a{
+    width: 24%;
+}
+.home-bg .cts-btns a button{
+    width: 100%;
+    background: linear-gradient(to right, #b58441 55%, #f3d192);
+    color: #151515;
+    border: none;
+    border-radius: 8px;
+    font-size: calc(0.7rem + 0.5vw);
+    font-weight: 600;
+    padding: 0.5rem 0;
+}
+.home-bg .cts-btns a button:hover{
+    background: linear-gradient(to right, #f3d192 10%, #b58441 50%);
+}
+.home-bg footer{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+    border-top: 2px solid #bfa274;
+    border-radius: 80px;
+    padding: 1rem 0;
+}
+.home-bg footer a{
+    color: #bfa274;
+    font-size: calc(0.5rem + 0.5vw);
+    font-weight: 600;
+}
+.home-bg footer a:hover{
+    color: #a88a5b;
+}
+
+/* For Small Screens */
+@media screen and (max-width: 767px){
+    .home-bg{
+         padding: 2.5rem 1.2rem 1rem 1.2rem;
+    }
+    .home-head .logo img{
+        width: 220px;
+    }
+    .home-head h1{
+        font-size: calc(1rem + 0.5vw);
+        margin-top: 1.3rem;
+    }
+    .home-bg .member-card{
+        padding: 1.2rem 1.1rem; 
+        border-radius: 1.3rem;
+        border: 2px solid #614e2f;
+        margin-top: 1.3rem;
+    }
+    .home-bg .member-card .member-card-row{
+        margin-bottom: 1rem;
+    }
+    .home-bg .member-card .member-card-row i{
+        font-size: calc(1rem + 0.5vw);
+        margin-right: 0.6rem;
+    }
+    .home-bg .member-card .member-card-row h2{
+        font-size: calc(0.8rem + 0.5vw);
+    }
+    .home-bg .member-card .member-card-row span{
+        margin-left: 0.6rem;
+        font-size: calc(0.85rem + 0.5vw);
+    }
+    .home-bg .spend-card{
+        padding: 0;
+        padding-top: 1.2rem;
+    }
+    .home-bg .spend-card .member-card-row{
+        padding: 0 1.2rem;
+    }
+    .home-bg .spend-card .spend-tracker{
+        padding: 1.2rem 1.1rem;
+    }
+    .home-bg .spend-card .spend-tracker .tracker-box h3{
+        font-size: calc(0.65rem + 0.5vw);
+        margin-bottom: 0.5rem;
+    }
+    .home-bg .spend-card .spend-tracker .tier-line{
+        padding: 0.22rem 0 0.22rem 0;
+    }
+    .home-bg .spend-card .spend-tracker .tier-line span{
+        font-size: calc(0.63rem + 0.5vw);
+    }
+    .home-bg .spend-card .spend-tracker .tracker-box p{
+        font-size: calc(0.4rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+    .home-bg .spend-card .tracker-foot p{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+    .home-bg .cts-btns{
+        margin-top: 1.3rem;
+    }
+    .home-bg .cts-btns a{
+        width: 48.5%;
+    }
+    .home-bg .cts-btns a button{
+        font-size: calc(0.75rem + 0.5vw);
+        margin-bottom: 0.6rem;
+    }
+    .home-bg footer{
+        gap: 2.5rem;
+        margin-top: 1.6rem;
+        border-top: 1.7px solid #bfa274;
+    }
+    .home-bg footer a{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 768px) {
+    .home-bg .spend-card .spend-tracker .tracker-box p{
+        font-size: calc(0.5rem + 0.5vw);
+    }
+}
+/* Home Page Styles End Here */
+
+/* ----------------------------------------------------------------------------- */
