@@ -531,31 +531,31 @@ body {
 .home-bg .spend-card .member-card-row{
     padding: 0 3rem;
 }
-.home-bg .spend-card .spend-tracker{
+.spend-tracker{
     background-color: #000;
     padding: 2rem 3rem;
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
-.home-bg .spend-card .spend-tracker .tracker-box{
+.spend-tracker .tracker-box{
     width: 33.2%;
 }
-.home-bg .spend-card .spend-tracker .tracker-box h3{
+.spend-tracker .tracker-box h3{
     color: #a68a5d;
     font-weight: 600;
     font-size: calc(0.6rem + 0.5vw);
     margin-bottom: 0.6rem;
 }
-.home-bg .spend-card .spend-tracker .tracker-box:first-child .tier-line{
+.spend-tracker .tracker-box:first-child .tier-line{
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
-.home-bg .spend-card .spend-tracker .tracker-box:last-child .tier-line{
+.spend-tracker .tracker-box:last-child .tier-line{
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
-.home-bg .spend-card .spend-tracker .tier-line {
+.spend-tracker .tier-line {
     padding: 0.3rem 0;
     background: linear-gradient(
         to right,
@@ -566,29 +566,29 @@ body {
     );
     transition: background 0.3s ease;
 }
-.home-bg .spend-card .spend-tracker .tier-line span{
+.spend-tracker .tier-line span{
     color: #ceb181;
     font-weight: 600;
     font-size: calc(0.5rem + 0.5vw);
 }
-.home-bg .spend-card .spend-tracker .tier-line.active{
+.spend-tracker .tier-line.active{
     background: linear-gradient(to right, #ebc676 10%, #9a6f2b) !important;
 }
-.home-bg .spend-card .spend-tracker .tier-line.active span{
+.spend-tracker .tier-line.active span{
     color: #000;
 }
-.home-bg .spend-card .spend-tracker .tracker-box p{
+.spend-tracker .tracker-box p{
     color: #d3d3d3;
     font-weight: 600;
     font-size: calc(0.7rem + 0.5vw);
     margin: 0;
     margin-bottom: 0.6rem;
 }
-.home-bg .spend-card .tracker-foot{
+.tracker-foot{
     background-color: #000;
     padding: 0 0 1rem 0;
 }
-.home-bg .spend-card .tracker-foot p{
+.tracker-foot p{
     margin: 0;
     text-align: center;
     color: #bfa274;
@@ -673,28 +673,27 @@ body {
     .home-bg .spend-card .member-card-row{
         padding: 0 1.2rem;
     }
-    .home-bg .spend-card .spend-tracker{
+    .spend-tracker{
         padding: 1.2rem 0.4rem;
     }
-    .home-bg .spend-card .spend-tracker .tracker-box{
+    .spend-tracker .tracker-box{
         width: 33.1%;
     }
-    .home-bg .spend-card .spend-tracker .tracker-box h3{
+    .spend-tracker .tracker-box h3{
         font-size: calc(0.65rem + 0.5vw);
         margin-bottom: 0.5rem;
     }
-    .home-bg .spend-card .spend-tracker .tier-line{
+    .spend-tracker .tier-line{
         padding: 0.22rem 0 0.22rem 0;
     }
-    .home-bg .spend-card .spend-tracker .tier-line span{
-        /* font-size: calc(0.63rem + 0.5vw); */
+    .spend-tracker .tier-line span{
         font-size: calc(0.43rem + 0.5vw);
     }
-    .home-bg .spend-card .spend-tracker .tracker-box p{
+    .spend-tracker .tracker-box p{
         font-size: calc(0.55rem + 0.5vw);
         margin-top: 0.4rem;
     }
-    .home-bg .spend-card .tracker-foot p{
+    .tracker-foot p{
         font-size: calc(0.55rem + 0.5vw);
     }
     .home-bg .cts-btns{
@@ -718,10 +717,186 @@ body {
 }
 
 @media screen and (min-width: 400px) and (max-width: 768px) {
-    .home-bg .spend-card .spend-tracker .tier-line span{
+    .spend-tracker .tier-line span{
         font-size: calc(0.5rem + 0.5vw);
     }
 }
 /* Home Page Styles End Here */
+
+/* ----------------------------------------------------------------------------- */
+
+/* Know Your Program Page Styles Start Here */
+.kyp-bg{
+    min-height: 100vh;
+    background-color: #11110f;
+    padding: 3rem 20% 2rem 20%;
+}
+.kyp-bg .kyp-head{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.kyp-bg .kyp-head img{
+    width: 200px;
+}
+.kyp-bg .spend-tracker{
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-top: 3px solid #614e2f;
+    margin-top: 2rem;
+}
+.kyp-bg .tracker-foot{
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+.kyp-bg .kyp-chart{
+    background-color: #0c0c0c;
+    border-radius: 1.5rem;
+    padding: 2rem 3rem 2.5rem 3rem;
+    margin-top: 2rem;
+    border: 3px solid #614e2f;
+}
+.kyp-bg .kyp-chart h1{
+    text-align: center;
+    font-size: calc(1.2rem + 0.5vw);
+    font-weight: 600;
+    color: #bfa274;
+}
+.kyp-bg .kyp-chart h2{
+    text-align: center;
+    font-size: calc(1rem + 0.5vw);
+    font-weight: 600;
+    color: #d1d1d1;
+    margin-top: 1.5rem;
+}
+.kyp-bg .kyp-chart .kyp-table{
+    margin-top: 1.5rem;
+    border: 1px solid #614e2f;
+    border-radius: 7px;
+    background-color: #161616;
+    overflow: hidden;
+}
+.kyp-bg .kyp-chart .kyp-table-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #614e2f;
+}
+.kyp-bg .kyp-chart .kyp-table-row:last-child{
+    border-bottom: none;
+}
+.kyp-bg .kyp-chart .kyp-table-row .kyp-table-column{
+    text-align: center;
+    border-right: 1px solid #614e2f;
+    padding: 0.7rem 0;
+    width: 35%;
+}
+.kyp-bg .kyp-chart .kyp-table-row .kyp-table-column:last-child{
+    border-right: none;
+}
+.kyp-bg .kyp-chart .kyp-table-row .kyp-table-column:first-child {
+    width: 40%;
+}
+.kyp-bg .kyp-chart .kyp-table-row .kyp-table-column:last-child {
+    width: 25%;
+}
+.kyp-bg .kyp-chart .kyp-table-row .kyp-table-column p{
+    margin: 0;
+    color: #bfa274;
+    font-weight: 600;
+    font-size: calc(0.65rem + 0.5vw)
+}
+
+.kyp-bg .kyp-accordion{
+    background-color: #0c0c0c;
+    border-radius: 1.5rem;
+    padding: 2.5rem 3rem;
+    margin-top: 2rem;
+    border: 3px solid #614e2f;
+    overflow: hidden;
+}
+.kyp-accordion .accordion-item{
+    background-color: #0c0c0c;
+    margin-bottom: 0.8rem;
+    border: none !important;
+}
+.kyp-accordion .accordion-item:last-child{
+    margin-bottom: 0;
+}
+.kyp-accordion .accordion-button,
+.kyp-accordion .accordion-body {
+    background-color: #111 !important;
+    box-shadow: none;
+    border: 1px solid #614e2f !important;
+    border-radius: 7px !important;
+    color: #bfa274;
+    font-weight: 600;
+}
+.kyp-accordion .accordion-body{
+    margin-top: 0.4rem;
+    background-color: #161616 !important;
+}
+.kyp-accordion .accordion-body span{
+    font-family: Arial, 'ArialMTLight', sans-serif;
+    font-weight: 700;
+    font-size: calc(0.7rem + 0.5vw);
+    margin-bottom: 1rem;
+    display: block;
+}
+.kyp-accordion .accordion-body p{
+    font-size: calc(0.55rem + 0.5vw);
+    margin: 0;
+}
+.kyp-accordion .accordion-body a{
+    color: #bfa274;
+}
+.kyp-accordion .accordion-body table{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+.kyp-accordion .accordion-body table th,
+.kyp-accordion .accordion-body table td{
+    border: 1px solid #bfa274;
+    padding: 10px;
+}
+.kyp-accordion .accordion-button{
+    font-size: calc(0.9rem + 0.5vw);
+    font-family: Arial, 'ArialMTLight', sans-serif;
+    font-weight: 700;
+}
+.kyp-accordion .accordion-button::after {
+    filter: brightness(0) saturate(100%) invert(62%) sepia(22%) saturate(1046%) hue-rotate(7deg) brightness(92%) contrast(86%);
+}
+.kyp-accordion .accordion-button::after {
+    display: none;
+}
+.kyp-accordion .accordion-button {
+    position: relative;
+}
+.kyp-accordion .accordion-button.collapsed::before,
+.kyp-accordion .accordion-button::before {
+    content: "\f067";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    color: #bfa274;
+}
+.kyp-accordion .accordion-button:not(.collapsed)::before {
+    content: "\f068";
+}
+
+/* For Small Screens */
+/* @media screen and (max-width: 767px){
+    .kyp-bg{
+        padding: 2.5rem 1.2rem 1rem 1.2rem;
+    }
+
+} */
+/* Know Your Program Page Styles End Here */
 
 /* ----------------------------------------------------------------------------- */
