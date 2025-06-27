@@ -92,7 +92,11 @@ body {
     width: 28%;
     border: 2.4px solid #7a633e;
     background-color: #13120e;
-    padding: 1.2rem 0;
+    padding: 0.9rem 0;
+    box-shadow: #ac823f 0px 3px 8px;
+}
+.login-bg .login-form form #input-box-2 button:active{
+    box-shadow: #ac823f 0px 7px 8px;
 }
 .login-bg .login-form form button[type="submit"]{
     background: linear-gradient(to right, #b58441 55%, #f3d192);
@@ -161,7 +165,9 @@ body {
         border: 2px solid #7a633e;
         /* padding: 1rem 0; */
         padding: 0.7rem 0;
-        box-shadow: #ac823f 0px 3px 8px;
+    }
+    .login-bg .login-form form #input-box-2 button:active{
+        box-shadow: #ac823f 0px 6px 8px;
     }
     .login-bg .login-form form button[type="submit"]{
         font-size: calc(1.2rem + 0.5vw);
@@ -508,11 +514,18 @@ body {
     width: 300px;
 }
 .home-head h1{
-    font-size: calc(1rem + 0.5vw);
+    font-size: calc(1.2rem + 0.5vw);
     font-weight: 600;
     color: #bfa274;
+    text-shadow: 0px 1px #f3d192;
     margin-top: 2.5rem;
     letter-spacing: 2px;
+    text-align: center;
+    background: linear-gradient(90deg, #bfa274, #f3d192, #bfa274);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 .home-bg .member-card{
     background-color: #0c0c0c;
@@ -655,7 +668,7 @@ body {
          padding: 2.5rem 1.2rem 1rem 1.2rem;
     }
     .home-head .logo img{
-        width: 220px;
+        width: 270px;
     }
     .home-head h1{
         font-size: calc(1rem + 0.5vw);
