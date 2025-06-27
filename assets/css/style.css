@@ -216,24 +216,6 @@ body {
 .signup-bg .logo img{
     width: 300px;
 }
-/* .signup-head{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.signup-head h1{
-    text-align: center;
-    color: #cfa152;
-    font-weight: 600;
-    font-size: calc(2.1rem + 0.5vw);
-}
-.signup-head p{
-    color: #bfa274;
-    font-weight: 600;
-    font-size: calc(0.6rem + 0.5vw);
-    margin-top: 0.4rem;
-} */
 .signup-container{
     background-color: #0a0a0a;
     padding: 2.5rem 3.5rem; 
@@ -341,13 +323,6 @@ body {
     margin: 0;
     margin-top: 2px;
 }
-/* .signup-container form #foot-tagline{
-    display: block;
-    text-align: center;
-    color: #bfa274;
-    font-weight: 600;
-    font-size: calc(0.4rem + 0.5vw);
-} */
 .signup-container form button{
     background: linear-gradient(to right, #b58441 55%, #f3d192);
     color: #0f0f0f;
@@ -394,13 +369,6 @@ body {
     .signup-bg{
         padding: 2.5rem 1.2rem 1rem 1.2rem;
     }
-    /* .signup-head h1{
-        font-size: calc(1.5rem + 0.5vw);
-    }
-    .signup-head p{
-        font-size: calc(0.65rem + 0.5vw);
-        margin-top: 0.4rem;
-    } */
     .signup-bg .logo img{
         width: 270px;
     }
@@ -472,9 +440,6 @@ body {
         font-size: calc(0.55rem + 0.5vw);
         margin-top: 9px;
     }
-    /* .signup-container form #foot-tagline{
-        font-size: calc(0.45rem + 0.5vw);
-    } */
     .signup-container form button{
         font-size: calc(1rem + 0.5vw);
         width: 65%;
