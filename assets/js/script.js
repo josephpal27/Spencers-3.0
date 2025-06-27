@@ -14,3 +14,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // --------------------------------------------------------------------------------------------
+
+// Functionality for the tracker boxes P element Unlock/Unlocked toggle
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.tracker-box').forEach(function(box) {
+        const tierLine = box.querySelector('.tier-line');
+        const unlockSpan = box.querySelector('p span');
+        if (tierLine && unlockSpan) {
+            if (tierLine.classList.contains('active')) {
+                unlockSpan.textContent = 'Unlocked';
+            } else {
+                unlockSpan.textContent = 'Unlock';
+            }
+        }
+    });
+});
+
+// --------------------------------------------------------------------------------------------

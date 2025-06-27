@@ -545,7 +545,7 @@ body {
     color: #a68a5d;
     font-weight: 600;
     font-size: calc(0.6rem + 0.5vw);
-    margin-bottom: 0.7rem;
+    margin-bottom: 0.6rem;
 }
 .home-bg .spend-card .spend-tracker .tracker-box:first-child .tier-line{
     border-bottom-left-radius: 10px;
@@ -555,27 +555,34 @@ body {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
 }
-.home-bg .spend-card .spend-tracker .tier-line{
-    background: #30302f;
+.home-bg .spend-card .spend-tracker .tier-line {
     padding: 0.3rem 0;
+    background: linear-gradient(
+        to right,
+        #fff 0%,
+        #fff var(--progress),
+        #30302f var(--progress),
+        #30302f 100%
+    );
+    transition: background 0.3s ease;
 }
 .home-bg .spend-card .spend-tracker .tier-line span{
-    color: #bfa274;
+    color: #ceb181;
     font-weight: 600;
     font-size: calc(0.5rem + 0.5vw);
 }
 .home-bg .spend-card .spend-tracker .tier-line.active{
-    background: linear-gradient(to right, #ebc676 10%, #9a6f2b);
+    background: linear-gradient(to right, #ebc676 10%, #9a6f2b) !important;
 }
 .home-bg .spend-card .spend-tracker .tier-line.active span{
     color: #000;
 }
 .home-bg .spend-card .spend-tracker .tracker-box p{
-    color: #bfa274;
+    color: #d3d3d3;
     font-weight: 600;
     font-size: calc(0.7rem + 0.5vw);
     margin: 0;
-    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
 }
 .home-bg .spend-card .tracker-foot{
     background-color: #000;
@@ -667,7 +674,10 @@ body {
         padding: 0 1.2rem;
     }
     .home-bg .spend-card .spend-tracker{
-        padding: 1.2rem 1.1rem;
+        padding: 1.2rem 0.4rem;
+    }
+    .home-bg .spend-card .spend-tracker .tracker-box{
+        width: 33.1%;
     }
     .home-bg .spend-card .spend-tracker .tracker-box h3{
         font-size: calc(0.65rem + 0.5vw);
@@ -677,11 +687,12 @@ body {
         padding: 0.22rem 0 0.22rem 0;
     }
     .home-bg .spend-card .spend-tracker .tier-line span{
-        font-size: calc(0.63rem + 0.5vw);
+        /* font-size: calc(0.63rem + 0.5vw); */
+        font-size: calc(0.43rem + 0.5vw);
     }
     .home-bg .spend-card .spend-tracker .tracker-box p{
-        font-size: calc(0.4rem + 0.5vw);
-        margin-top: 0.5rem;
+        font-size: calc(0.55rem + 0.5vw);
+        margin-top: 0.4rem;
     }
     .home-bg .spend-card .tracker-foot p{
         font-size: calc(0.55rem + 0.5vw);
@@ -706,8 +717,8 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 768px) {
-    .home-bg .spend-card .spend-tracker .tracker-box p{
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    .home-bg .spend-card .spend-tracker .tier-line span{
         font-size: calc(0.5rem + 0.5vw);
     }
 }
