@@ -619,6 +619,7 @@ body {
 footer{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 3rem;
     margin-top: 2rem;
     border-top: 2px solid #bfa274;
@@ -1016,5 +1017,217 @@ footer a:hover{
     }
 }
 /* Know Your Program Page Styles End Here */
+
+/* ----------------------------------------------------------------------------- */
+
+/* Track Progress Page Styles Start Here */
+.track-progress-head{
+    text-align: center;
+    margin-top: 2rem;
+}
+.track-progress-head h1{
+    font-size: calc(2.5rem + 0.5vw);
+    font-weight: 600;
+    background: linear-gradient(to right, #dcdcdc 10%, #e0c18f 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: "EB Garamond", serif;
+}
+.track-progress-head p{
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 600;
+    color: #bfa274;
+    margin-top: 1rem;
+}
+.track-progress-sub-head{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+.track-progress-sub-head h4{
+    font-size: calc(2rem + 0.5vw);
+    font-weight: 600;
+    background: linear-gradient(to right, #ffedce 10%, #aa8a56 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: "EB Garamond", serif;
+}
+.track-progress-sub-head h4 span{
+    font-family: 'ArialMTLight', Arial, sans-serif;
+    font-size: calc(1.7rem + 0.5vw);
+}
+.track-progress-sub-head h5{
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 600;
+    color: #bfa274;
+    margin-top: 1rem;
+}
+.track-progress-card{
+    margin-top: 2.5rem;
+    padding-bottom: 2rem;
+}
+.track-progress-card p{
+    font-size: calc(0.9rem + 0.5vw);
+    font-weight: 600;
+    color: #d7d7d7;
+}
+.track-progress-card .progress-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.track-progress-card .progress-bar .bar-left{
+    width: 27%;
+    text-align: start;
+    padding: 0.5rem 1rem;
+}
+.track-progress-card .progress-bar .bar-right{
+    width: 73%;
+    text-align: end;
+    padding: 0.5rem 1rem;
+    border-radius: 2px;
+    background: linear-gradient(
+        to right,
+        #ebc676 0%,
+        #946924 var(--progress),
+        #27241d var(--progress),
+        #27241d 100%
+    );
+    transition: background 0.3s ease;
+}
+.track-progress-card .progress-bar .bar-left p{
+    margin: 0;
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 600;
+    color: #bfa274;
+}
+.track-progress-card .progress-bar .bar-left p i{
+    margin-right: 5px;
+}
+.track-progress-card .progress-bar .bar-right span{
+    color: #d9d9d9;
+    font-weight: 600;
+    font-size: calc(0.8rem + 0.5vw);
+}
+.track-progress-card .btn-row{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+.track-progress-card .btn-row button{
+    background: linear-gradient(to right, #b58441 55%, #f3d192);
+    color: #151515;
+    border: none;
+    border-radius: 8px;
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 600;
+    padding: 0.5rem 2.5rem;
+}
+.track-progress-card .btn-row button:hover{
+    background: linear-gradient(to right, #f3d192 10%, #b58441 50%);
+}
+
+/* For Small Screens */
+@media screen and (max-width: 767px){
+    .track-progress-head{
+        margin-top: 1.3rem;
+    }
+    .track-progress-head h1{
+        font-size: calc(1.7rem + 0.5vw);
+    }
+    .track-progress-head p{
+        font-size: calc(0.9rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+
+
+    .track-progress-sub-head{
+        margin-top: 1.3rem;
+    }
+    .track-progress-sub-head h4{
+        font-size: calc(1.4rem + 0.5vw);
+    }
+    .track-progress-sub-head h4 span{
+        font-size: calc(1.2rem + 0.5vw);
+    }
+    .track-progress-sub-head h5{
+        font-size: calc(0.95rem + 0.5vw);
+        margin-top: 0.5rem;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .track-progress-card{
+        margin-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    .track-progress-card p{
+        font-size: calc(0.85rem + 0.5vw);
+    }
+    .track-progress-card .progress-bar{
+        margin-bottom: 0.5rem;
+    }
+    .track-progress-card .progress-bar .bar-left{
+        width: 38%;
+        padding: 0.2rem 0;
+    }
+    .track-progress-card .progress-bar .bar-right{
+        width: 62%;
+        padding: 0.2rem 0.5rem;
+    }
+    .track-progress-card .progress-bar .bar-left p{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+    .track-progress-card .progress-bar .bar-left p i{
+        margin-right: 2px;
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .track-progress-card .progress-bar .bar-right span{
+        font-size: calc(0.7rem + 0.5vw);
+    }
+    .track-progress-card .btn-row{
+        gap: 1rem;
+        margin-top: 1.8rem;
+    }
+    .track-progress-card .btn-row a{
+        width: 48%;
+    }
+    .track-progress-card .btn-row button{
+        width: 100%;
+        font-size: calc(0.9rem + 0.5vw);
+        padding: 0.5rem 0;
+    }
+    .track-progress-bg footer{
+        gap: 1.7rem;
+        margin-top: 1rem;
+        padding: 1.5rem 0.5rem 1rem 0.5rem;
+    }
+    .track-progress-bg footer a{
+        margin-bottom: -1rem;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    .track-progress-head h1{
+        font-size: calc(1.9rem + 0.5vw);
+    }
+    .track-progress-card .progress-bar .bar-left{
+        width: 34%;
+    }
+    .track-progress-card .progress-bar .bar-right{
+        width: 66%;
+    }
+}
+@media screen and (min-width: 422px) and (max-width: 768px) {
+    .track-progress-head p{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+/* Track Progress Page Styles End Here */
 
 /* ----------------------------------------------------------------------------- */
