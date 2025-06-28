@@ -616,7 +616,7 @@ body {
 .home-bg .cts-btns a button:hover{
     background: linear-gradient(to right, #f3d192 10%, #b58441 50%);
 }
-.home-bg footer{
+footer{
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -625,12 +625,12 @@ body {
     border-radius: 80px;
     padding: 1rem 0;
 }
-.home-bg footer a{
+footer a{
     color: #bfa274;
     font-size: calc(0.5rem + 0.5vw);
     font-weight: 600;
 }
-.home-bg footer a:hover{
+footer a:hover{
     color: #a88a5b;
 }
 
@@ -706,17 +706,17 @@ body {
         font-size: calc(0.75rem + 0.5vw);
         margin-bottom: 0.6rem;
     }
-    .home-bg footer{
+    footer{
         gap: 2.5rem;
         margin-top: 1.6rem;
         border-top: 1.7px solid #bfa274;
     }
-    .home-bg footer a{
+    footer a{
         font-size: calc(0.7rem + 0.5vw);
     }
 }
 
-@media screen and (min-width: 400px) and (max-width: 768px) {
+@media screen and (min-width: 405px) and (max-width: 768px) {
     .spend-tracker .tier-line span{
         font-size: calc(0.5rem + 0.5vw);
     }
@@ -729,7 +729,7 @@ body {
 .kyp-bg{
     min-height: 100vh;
     background-color: #11110f;
-    padding: 3rem 20% 2rem 20%;
+    padding: 3rem 20% 0 20%;
 }
 .kyp-bg .kyp-head{
     display: flex;
@@ -748,6 +748,7 @@ body {
 .kyp-bg .tracker-foot{
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
+    border-bottom: 1.5px solid #614e2f;
 }
 .kyp-bg .kyp-chart{
     background-color: #0c0c0c;
@@ -806,7 +807,6 @@ body {
     font-weight: 600;
     font-size: calc(0.65rem + 0.5vw)
 }
-
 .kyp-bg .kyp-accordion{
     background-color: #0c0c0c;
     border-radius: 1.5rem;
@@ -889,14 +889,132 @@ body {
 .kyp-accordion .accordion-button:not(.collapsed)::before {
     content: "\f068";
 }
+.kyp-bg .cta-content{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.kyp-bg .cta-content p{
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 600;
+    color: #bfa274;
+    text-align: center;
+}
+.kyp-bg .cta-content button{
+    background: linear-gradient(to right, #b58441 55%, #f3d192);
+    color: #151515;
+    border: none;
+    border-radius: 8px;
+    font-size: calc(0.9rem + 0.5vw);
+    font-weight: 600;
+    padding: 0.5rem 2.5rem;
+}
+.kyp-bg .cta-content button:hover{
+    background: linear-gradient(to right, #f3d192 10%, #b58441 50%);
+}
 
 /* For Small Screens */
-/* @media screen and (max-width: 767px){
+@media screen and (max-width: 767px){
     .kyp-bg{
-        padding: 2.5rem 1.2rem 1rem 1.2rem;
+        padding: 2rem 1.2rem 1rem 1.2rem;
     }
+    .kyp-bg .kyp-head img{
+        width: 140px;
+    }
+    .kyp-bg .spend-tracker{
+        border-top-left-radius: 1.3rem;
+        border-top-right-radius: 1.3rem;
+        border-top: 3px solid #614e2f;
+        margin-top: 1rem;
+    }
+    .kyp-bg .tracker-foot{
+        border-bottom-left-radius: 1.3rem;
+        border-bottom-right-radius: 1.3rem;
+        border-bottom: 1.8px solid #614e2f;
+    }
+    .kyp-bg .kyp-chart{
+        border-radius: 1.3rem;
+        padding: 1.3rem 0.5rem 0.7rem 0.5rem;
+        margin-top: 1.3rem;
+        border: 2px solid #614e2f;
+    }
+    .kyp-bg .kyp-chart h1{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .kyp-bg .kyp-chart h2{
+        font-size: calc(0.85rem + 0.5vw);
+        margin-top: 0.5rem;
+    }
+    .kyp-bg .kyp-chart .kyp-table{
+        margin-top: 1.3rem;
+    }
+    .kyp-bg .kyp-chart .kyp-table-row .kyp-table-column{
+        width: 38%;
+    }
+    .kyp-bg .kyp-chart .kyp-table-row .kyp-table-column:first-child {
+        width: 43%;
+    }
+    .kyp-bg .kyp-chart .kyp-table-row .kyp-table-column:last-child {
+        width: 20%;
+    }
+    .kyp-bg .kyp-chart .kyp-table-row .kyp-table-column p{
+        font-size: calc(0.6rem + 0.5vw)
+    }
+    .kyp-bg .kyp-accordion{
+        border-radius: 1.3rem;
+        padding: 0.8rem 0.5rem;
+        margin-top: 1.3rem;
+        border: 2px solid #614e2f;
+    }
+    .kyp-accordion .accordion-button,
+    .kyp-accordion .accordion-body {
+        padding: 0.9rem 0.6rem;
+    }
+    .kyp-accordion .accordion-body span{
+        font-size: calc(0.8rem + 0.5vw);
+        margin-bottom: 0.5rem;
+    }
+    .kyp-accordion .accordion-body p{
+        font-size: calc(0.65rem + 0.5vw);
+    }
+    .kyp-accordion .accordion-body ul{
+        font-size: calc(0.65rem + 0.5vw);
+    }
+    .kyp-accordion .accordion-body table th,
+    .kyp-accordion .accordion-body table td{
+        padding: 10px 0;
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .kyp-accordion .accordion-button{
+        font-size: calc(1rem + 0.5vw);
+    }
+    .kyp-accordion .accordion-button.collapsed::before,
+    .kyp-accordion .accordion-button::before {
+        right: 0.6rem;
+        font-size: 1rem;
+    }
+    .kyp-bg .cta-content{
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .kyp-bg .cta-content p{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+}
 
-} */
+@media screen and (min-width: 405px) and (max-width: 768px) {
+     .kyp-bg .kyp-chart .kyp-table-row .kyp-table-column{
+        width: 40%;
+    }
+    .kyp-bg .kyp-chart .kyp-table-row .kyp-table-column:first-child {
+        width: 43%;
+    }
+    .kyp-bg .kyp-chart .kyp-table-row .kyp-table-column:last-child {
+        width: 16%;
+    }
+}
 /* Know Your Program Page Styles End Here */
 
 /* ----------------------------------------------------------------------------- */
