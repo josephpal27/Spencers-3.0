@@ -734,11 +734,11 @@ footer a:hover{
 }
 .kyp-bg .kyp-head{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 .kyp-bg .kyp-head img{
-    width: 200px;
+    width: 270px;
 }
 .kyp-bg .spend-tracker{
     border-top-left-radius: 1.5rem;
@@ -922,7 +922,7 @@ footer a:hover{
         padding: 2rem 1.2rem 1rem 1.2rem;
     }
     .kyp-bg .kyp-head img{
-        width: 140px;
+        width: 210px;
     }
     .kyp-bg .spend-tracker{
         border-top-left-radius: 1.3rem;
@@ -969,7 +969,9 @@ footer a:hover{
         margin-top: 1.3rem;
         border: 2px solid #614e2f;
     }
-    .kyp-accordion .accordion-button,
+    .kyp-accordion .accordion-button{
+        padding: 0.9rem 2rem 0.9rem 0.6rem;
+    }
     .kyp-accordion .accordion-body {
         padding: 0.9rem 0.6rem;
     }
@@ -985,7 +987,7 @@ footer a:hover{
     }
     .kyp-accordion .accordion-body table th,
     .kyp-accordion .accordion-body table td{
-        padding: 10px 0;
+        padding: 10px 5px;
         font-size: calc(0.6rem + 0.5vw);
     }
     .kyp-accordion .accordion-button{
