@@ -1276,3 +1276,186 @@ footer a:hover{
 /* Track Progress Page Styles End Here */
 
 /* ----------------------------------------------------------------------------- */
+
+/* Passbook Page Styles Start Here */
+.passbook-head{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+.passbook-head h1{
+    font-size: calc(2.5rem + 0.5vw);
+    font-weight: 600;
+    background: linear-gradient(to right, #d7af6e 40%, #f9e3bf 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: "EB Garamond", serif;
+}
+.wallet-progress .wallet-progress-content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2rem;
+}
+.wallet-progress .wallet-progress-content p{
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 600;
+    color: #bfa274;
+}
+.wallet-progress .wallet-progress-content h2{
+    font-size: calc(1.2rem + 0.5vw);
+    font-weight: 600;
+    color: #a47f44;
+}
+.wallet-progress .wallet-progress-content span{
+    font-size: calc(0.4rem + 0.5vw);
+    font-weight: 600;
+    color: #bfa274;
+    display: block;
+}
+.wallet-progress .wallet-progress-line{
+    border-radius: 10px;
+    height: 7px;
+    margin-top: 1.5rem;
+    background: linear-gradient(
+        to right,
+        #946924 15%,
+        #ebc676 var(--progress),
+        #27241d var(--progress),
+        #27241d 100%
+    );
+    transition: background 0.3s ease;
+}
+.passbook-table{
+    margin-top: 3rem;
+}
+.passbook-table table{
+    margin-top: 3.5rem;
+    width: 100%;
+    text-align: center;
+    background-color: #0a0a09;
+}
+.passbook-table table th,
+.passbook-table table td{
+    border: 1px solid #bfa274;
+    padding: 10px;
+    font-size: calc(0.65rem + 0.5vw);
+    font-weight: 600;
+    color: #bfa274;
+}
+.passbook-table table th{
+    font-size: calc(0.7rem + 0.5vw);
+    color: #a3895e;
+}
+.passbook-table table td.red{
+    color: #c10300;
+}
+.passbook-bg .btn-row{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+.passbook-bg .btn-row a{
+    width: 40%;
+}
+.passbook-bg .btn-row a button{
+    width: 100%;
+    background: linear-gradient(to right, #b58441 55%, #f3d192);
+    color: #151515;
+    border: none;
+    border-radius: 8px;
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 600;
+    padding: 0.5rem 2.5rem;
+}
+.passbook-bg .btn-row a button:hover{
+    background: linear-gradient(to right, #f3d192 10%, #b58441 50%);
+}
+
+/* For Small Screens */
+@media screen and (max-width: 767px){
+    .passbook-head{
+        margin-top: 1.8rem;
+    }
+    .passbook-head h1{
+        font-size: calc(1.7rem + 0.5vw);
+    }
+    .wallet-progress .wallet-progress-content{
+        margin-top: 1.2rem;
+    }
+    .wallet-progress .wallet-progress-content p{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-bottom: 0.5rem;
+    }
+    .wallet-progress .wallet-progress-content h2{
+        font-size: calc(1rem + 0.5vw);
+        margin-bottom: 0.4rem;
+    }
+    .wallet-progress .wallet-progress-content span{
+        font-size: calc(0.52rem + 0.5vw);
+    }
+    .wallet-progress .wallet-progress-line{
+        height: 5px;
+        margin-top: 1.2rem;
+    }
+    .passbook-table{
+        margin-top: 0;
+    }
+    .passbook-table table{
+        margin-top: 2rem;
+    }
+    .passbook-table table th,
+    .passbook-table table td{
+        padding: 10px 4px;
+        font-size: calc(0.55rem + 0.5vw);
+    }
+    .passbook-table table th{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .passbook-bg .btn-row{
+        margin-top: 2rem;
+        justify-content: space-between;
+        gap: 0;
+        margin-bottom: 2.5rem;
+    }
+    .passbook-bg .btn-row a{
+        width: 47.7%;
+    }
+    .passbook-bg .btn-row a button{
+        font-size: calc(0.53rem + 0.5vw);
+        padding: 0.5rem 0;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 404px) {
+    .passbook-bg .btn-row a button{
+        font-size: calc(0.58rem + 0.5vw);
+    }
+}
+@media screen and (min-width: 405px) and (max-width: 768px) {
+    .wallet-progress .wallet-progress-content p{
+        font-size: calc(0.75rem + 0.5vw);
+    }
+    .wallet-progress .wallet-progress-content h2{
+        font-size: calc(1.05rem + 0.5vw);
+    }
+    .wallet-progress .wallet-progress-content span{
+        font-size: calc(0.55rem + 0.5vw);
+    }
+    .passbook-table table th,
+    .passbook-table table td{
+        padding: 10px 5px;
+        font-size: calc(0.6rem + 0.5vw);
+    }
+    .passbook-table table th{
+        font-size: calc(0.65rem + 0.5vw);
+    }
+    .passbook-bg .btn-row a button{
+        font-size: calc(0.6rem + 0.5vw);
+    }
+}
+/* Passbook Page Styles End Here */
+/* ----------------------------------------------------------------------------- */

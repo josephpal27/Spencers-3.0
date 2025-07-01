@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Passbook</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <!-- Link to AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Passbook Start -->
+    <section class="kyp-bg passbook-bg">
+        <!-- KYP Head -->
+        <div class="kyp-head">
+            <div class="logo">
+                <img src="assets/images/logo/logo.webp" alt="logo" loading="lazy">
+            </div>
+        </div>
+        <!-- Spend Tracker -->
+        <div class="spend-tracker">
+            <div class="tracker-box">
+                <h3>Tier 1</h3>
+                <p><span>Unlock</span> Flat ₹100</p>
+                <div class="tier-line active" style="--progress: 100%;">
+                    <span>₹3300 - ₹4000</span>
+                    <div class="progress-indicator hide">₹4400</div>
+                </div>
+            </div>
+            <div class="tracker-box">
+                <h3>Tier 2</h3>
+                <p><span>Unlock</span> Upto ₹200</p>
+                <div class="tier-line" style="--progress: 40%;">
+                    <span>₹4001 - ₹5000</span>
+                    <div class="progress-indicator">₹4400</div>
+                </div>
+            </div>
+            <div class="tracker-box">
+                <h3>Tier 3</h3>
+                <p><span>Unlock</span> Upto ₹600</p>
+                <div class="tier-line" style="--progress: 0%;">
+                    <span>₹5001 - ₹10000 & above</span>
+                    <div class="progress-indicator hide">₹4400</div>
+                </div>
+            </div>
+        </div> 
+        <div class="tracker-foot">
+            <p>Last Updated: <span>24 June, 11:59 PM</span></p>
+        </div>
+        <!-- Passbook Head -->
+        <div class="passbook-head">
+            <h1>WALLET PASSBOOK</h1>
+        </div> 
+        <!-- Wallet Progress -->
+        <div class="wallet-progress">
+            <div class="wallet-progress-content">
+                <div class="box">
+                    <p>Wallet Balance</p>
+                    <h2>₹200</h2>
+                </div>
+                <div class="box">
+                    <p>Total Cashback Earned</p>
+                    <h2>₹800</h2>
+                </div>
+                <div class="box">
+                    <p>Last Credited</p>
+                    <h2>4 July</h2>
+                    <span>for June Cashback</span>
+                </div>
+            </div>
+            <!-- Progress Line -->
+            <div class="wallet-progress-line" style="--progress: 70%;"></div>
+        </div>
+        <!-- Passbook Table -->
+        <div class="passbook-table">
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Eligible Spend</th>
+                        <th>Cashback Earned</th>
+                        <th>Cashback Redeemed</th>
+                        <th>Credited On</th>
+                        <th>Debited On</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>June</td>
+                        <td>₹4,700</td>
+                        <td>₹200</td>
+                        <td>Redeemed</td>
+                        <td>4th Jul</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>₹5,480</td>
+                        <td>₹600</td>
+                        <td>Redeemed</td>
+                        <td>3rd Aug</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Auguest</td>
+                        <td>₹3,290</td>
+                        <td>₹0</td>
+                        <td>Not Earned</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- CTA Btns -->
+        <div class="btn-row">
+            <a href=""><button>TRACK MY PROGRESS</button></a>
+            <a href=""><button>VIEW TRANSACTION DETAILS</button></a>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <a href="">Home</a>
+            <a href="">T&C</a>
+            <a href="">FAQ</a>
+            <a href="">Contact Us</a>
+        </footer> 
+    </section>
+    <!-- Passbook End -->
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Bootstrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS Animation JS Link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- JS Link -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

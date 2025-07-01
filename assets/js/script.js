@@ -31,3 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // --------------------------------------------------------------------------------------------
+
+// Functionality for the passbook page table to highlight the ₹0 values in red
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.passbook-table table td').forEach(function(td) {
+        if (td.innerText.trim() === '₹0') {
+            td.classList.add('red');
+        }
+    });
+});
+
+// --------------------------------------------------------------------------------------------
