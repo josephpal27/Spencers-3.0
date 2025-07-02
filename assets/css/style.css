@@ -502,6 +502,21 @@ body {
     background-color: #11110f;
     padding: 3rem 20% 0 20%;
 }
+.sign-out{
+    display: flex;
+    justify-content: flex-end;
+}
+.sign-out button{
+    background: transparent;
+    color: #d0ae6e;
+    border: none;
+    font-size: calc(0.7rem + 0.5vw);
+    font-weight: 600;
+    text-decoration: underline;
+}
+.sign-out button:hover{
+    color: #ae8b4c;
+}
 .home-head .logo{
     display: flex;
     justify-content: center;
@@ -711,6 +726,10 @@ footer a:hover{
 @media screen and (max-width: 767px){
     .home-bg{
          padding: 2.5rem 1.2rem 1rem 1.2rem;
+    }
+    .sign-out button{
+        font-size: calc(0.75rem + 0.5vw);
+        margin-bottom: 0.2rem;
     }
     .home-head .logo img{
         width: 270px;
