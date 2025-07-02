@@ -35,15 +35,15 @@
         <div class="spend-tracker">
             <!-- Tier Labels -->
             <div class="tiers-header">
-                <div class="tier-label">
+                <div class="tier-label" data-min="3300" data-max="4000">
                     <h3>Tier 1</h3>
                     <p><span>Unlock</span> Flat ₹100</p>
                 </div>
-                <div class="tier-label">
+                <div class="tier-label" data-min="4001" data-max="5000">
                     <h3>Tier 2</h3>
                     <p><span>Unlock</span> Upto ₹200</p>
                 </div>
-                <div class="tier-label">
+                <div class="tier-label" data-min="5001" data-max="10000">
                     <h3>Tier 3</h3>
                     <p><span>Unlock</span> Upto ₹600</p>
                 </div>
@@ -206,6 +206,17 @@
             tier3.appendChild(wrapper);
             indicator.textContent = `₹${currentSpend}`;
         }
+
+        // Update tier label spans to "Unlocked" if tier is completed
+        document.querySelectorAll(".tier-label").forEach(label => {
+            const min = parseInt(label.getAttribute("data-min"), 10);
+            const max = parseInt(label.getAttribute("data-max"), 10);
+            const span = label.querySelector("span");
+
+            if (currentSpend >= max && span) {
+                span.textContent = "Unlocked";
+            }
+        });
     </script>
 
     <!-- JS Link -->
