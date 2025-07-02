@@ -28,6 +28,9 @@
             <div class="login-title">
                 <a href="signup.html">New User? Sign up here.</a>
             </div>
+            <div class="otp-sent-popup">
+                <p>OTP sent successfully on your mobile</p>
+            </div>
             <!-- Form -->
             <div class="login-form">
                 <form action="">
@@ -58,6 +61,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script>
+        const otpBtn = document.getElementById("get-otp-btn");
+        const otpPopup = document.querySelector(".otp-sent-popup");
+
+        otpBtn.addEventListener("click", () => {
+            otpPopup.classList.add("show");
+
+            setTimeout(() => {
+                otpPopup.classList.remove("show");
+            }, 4000);
+        });
+    </script>   
 
     <!-- JS Link -->
     <script src="assets/js/script.js"></script>

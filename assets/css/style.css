@@ -52,8 +52,25 @@ body {
     font-weight: 600;
     font-size: calc(0.8rem + 0.5vw);
 }
+.login-bg .otp-sent-popup{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, visibility 0s linear 0.4s;
+}
+.login-bg .otp-sent-popup.show {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+.login-bg .otp-sent-popup p{
+    color: #bfa274;
+    font-weight: 600;
+    font-size: calc(0.8rem + 0.5vw);
+    margin-top: 0.7rem;
+}
 .login-bg .login-form form{
-    margin-top: 2.5rem;
+    margin-top: 2.8rem;
 }
 .login-bg .login-form form .input-box{
     margin-bottom: 1rem;
@@ -138,9 +155,12 @@ body {
     .login-bg .login-container a{
         font-size: calc(0.9rem + 0.5vw);
     }
-
+    .login-bg .otp-sent-popup p{
+        font-size: calc(0.75rem + 0.5vw);
+        margin-top: 0.4rem;
+    }
     .login-bg .login-form form{
-        margin-top: 1.5rem;
+        margin-top: 1.9rem;
     }
     .login-bg .login-form form .input-box{
         margin-bottom: 0.9rem;
