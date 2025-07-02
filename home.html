@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Link to AOS Animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS Link -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -52,31 +50,29 @@
             </div>
             <!-- Spend Tracker -->
             <div class="spend-tracker">
-                <div class="tracker-box">
-                    <h3>Tier 1</h3>
-                    <p><span>Unlock</span> Flat ₹100</p>
-                    <div class="tier-line active" style="--progress: 100%;">
-                        <span>₹3300 - ₹4000</span>
-                        <div class="progress-indicator hide">₹4400</div>
+                <!-- Tier Labels -->
+                <div class="tiers-header">
+                    <div class="tier-label">
+                        <h3>Tier 1</h3>
+                        <p><span>Unlock</span> Flat ₹100</p>
+                    </div>
+                    <div class="tier-label">
+                        <h3>Tier 2</h3>
+                        <p><span>Unlock</span> Upto ₹200</p>
+                    </div>
+                    <div class="tier-label">
+                        <h3>Tier 3</h3>
+                        <p><span>Unlock</span> Upto ₹600</p>
                     </div>
                 </div>
-                <div class="tracker-box">
-                    <h3>Tier 2</h3>
-                    <p><span>Unlock</span> Upto ₹200</p>
-                    <div class="tier-line" style="--progress: 40%;">
-                        <span>₹4001 - ₹5000</span>
-                        <div class="progress-indicator">₹4400</div>
-                    </div>
+                <!-- Progress Bar -->
+                <div class="tracker-bar">
+                    <div class="tier-box" id="tier1"><span>₹3300 - ₹4000</span></div>
+                    <div class="tier-box" id="tier2"><span>₹4001 - ₹5000</span></div>
+                    <div class="tier-box" id="tier3"><span>₹5001 - ₹10000 & above</span></div>
+                    <div class="spend-indicator" id="spend-indicator">₹0</div>
                 </div>
-                <div class="tracker-box">
-                    <h3>Tier 3</h3>
-                    <p><span>Unlock</span> Upto ₹600</p>
-                    <div class="tier-line" style="--progress: 0%;">
-                        <span>₹5001 - ₹10000 & above</span>
-                        <div class="progress-indicator hide">₹4400</div>
-                    </div>
-                </div>
-            </div> 
+            </div>
             <div class="tracker-foot">
                 <p>Last Updated: <span>24 June, 11:59 PM</span></p>
             </div>
@@ -105,10 +101,65 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
-    <!-- AOS Animation JS Link -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        const currentSpend = 4700; // Replace with the actual current spend fetched using Backend
+
+        const tiers = [
+            { id: 'tier1', min: 3300, max: 4000 },
+            { id: 'tier2', min: 4001, max: 5000 },
+            { id: 'tier3', min: 5001, max: 10000 }
+        ];
+
+        let indicatorPlaced = false;
+
+        tiers.forEach(tier => {
+            const el = document.getElementById(tier.id);
+            const textSpan = el.querySelector('span');
+            let progress = 0;
+            let fillColor = 'transparent';
+            let textColor = '#c19c63';
+
+            const isInThisTier = currentSpend >= tier.min && currentSpend <= tier.max;
+
+            if (currentSpend >= tier.max) {
+                progress = 100;
+                fillColor = 'linear-gradient(to right, #eac677, #9d6f2b)';
+                textColor = '#000';
+            } else if (currentSpend >= tier.min) {
+                progress = ((currentSpend - tier.min) / (tier.max - tier.min)) * 100;
+                fillColor = 'white';
+                textColor = '#c19c63';
+            }
+
+            el.style.setProperty('--progress', `${progress}%`);
+            el.style.setProperty('--fill-color', fillColor);
+            textSpan.style.color = textColor;
+
+            if (!indicatorPlaced && isInThisTier) {
+                const indicator = document.getElementById("spend-indicator");
+                const wrapper = document.createElement("div");
+                wrapper.style.position = "absolute";
+                wrapper.style.left = `${progress}%`;
+                wrapper.style.transform = "translateX(-50%)";
+                wrapper.appendChild(indicator);
+                el.appendChild(wrapper);
+                indicator.textContent = `₹${currentSpend}`;
+                indicatorPlaced = true;
+            }
+        });
+
+        // If spend is above all tiers
+        if (!indicatorPlaced && currentSpend > 10000) {
+            const tier3 = document.getElementById("tier3");
+            const indicator = document.getElementById("spend-indicator");
+            const wrapper = document.createElement("div");
+            wrapper.style.position = "absolute";
+            wrapper.style.right = "0";
+            wrapper.style.transform = "translateX(50%)";
+            wrapper.appendChild(indicator);
+            tier3.appendChild(wrapper);
+            indicator.textContent = `₹${currentSpend}`;
+        }
     </script>
 
     <!-- JS Link -->
