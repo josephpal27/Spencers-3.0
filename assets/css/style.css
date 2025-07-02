@@ -48,6 +48,7 @@ body {
 }
 .login-bg .login-container a{
     text-decoration: underline;
+    text-align: center;
     color: #bfa274;
     font-weight: 600;
     font-size: calc(0.8rem + 0.5vw);
