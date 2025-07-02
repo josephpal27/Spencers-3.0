@@ -491,6 +491,10 @@ body {
     .signup-bg .signup-foot-text i{
         margin-right: 3px;
     }
+    .signup-container form .error-text{
+        font-size: calc(0.6rem + 0.5vw);
+        margin-bottom: 0.1rem;
+    }
 }
 /* SignUp Page Styles End Here */
 
