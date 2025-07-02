@@ -1639,3 +1639,49 @@ footer a:hover{
 /* T&C Page Styles End Here */
 
 /* ----------------------------------------------------------------------------- */
+
+/* Transaction Details Page Styles Start Here */
+.transaction-details-head{
+    text-align: center;
+    margin-top: 2rem;
+}
+.transaction-details-head h1{
+    font-size: calc(2.5rem + 0.5vw);
+    font-weight: 600;
+    background: linear-gradient(to right, #a48149 40%, #e0c18f 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: "EB Garamond", serif;
+    margin-bottom: 2rem;
+}
+.transaction-details-bg .cashback-details-row{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #755b32;
+    padding: 1rem 0;
+}
+.transaction-details-bg .cashback-details-row p{
+    width: max-content;
+    font-size: calc(0.9rem + 0.5vw);
+    color: #bfa274;
+    font-weight: 600;
+    margin: 0;
+}
+.transaction-details-bg .cashback-details-row #cb-month{
+    color: #bebebe;
+}
+.transaction-details-bg .exclusions h2{
+    font-size: calc(1.2rem + 0.5vw);
+    font-weight: 600;
+    color: #977c51;
+    margin: 0;
+    margin-top: 2.5rem;
+}
+.transaction-details-bg .exclusions h2 i{
+    margin-right: 5px;
+}
+/* Transaction Details Page Styles End Here */
+
+/* ----------------------------------------------------------------------------- */
