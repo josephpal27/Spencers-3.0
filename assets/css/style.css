@@ -384,6 +384,17 @@ body {
     margin-right: 5px;
 }
 
+.signup-container form .error-text{
+    color: #d35731;
+    font-weight: 600;
+    font-size: calc(0.5rem + 0.5vw);
+    margin: 0;
+    display: none;
+}
+.signup-container form .error-text.show{
+    display: block;
+}
+
 /* For Small Screens */
 @media screen and (max-width: 767px){
     .signup-bg{
