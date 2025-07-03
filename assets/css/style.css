@@ -673,7 +673,7 @@ body {
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-bottom: 6px solid #f3e5c0;
+    border-bottom: 6px solid #eed8a4;
 } 
 .tracker-foot{
     background-color: #000;
@@ -1734,5 +1734,36 @@ footer a:hover{
     }
 }
 /* Transaction Details Page Styles End Here */
+
+/* ----------------------------------------------------------------------------- */
+
+/* FAQ Page Styles Start Here */
+.faq-bg h1{
+    font-size: calc(2.4rem + 0.5vw);
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(to right, #d7af6e 40%, #f9e3bf 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: "EB Garamond", serif;
+}
+.faq-content{
+    margin-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+/* For Small Screens */
+@media screen and (max-width: 767px){
+    .faq-bg h1{
+        font-size: calc(1.6rem + 0.5vw);
+    }
+    .faq-content{
+        margin-top: 1.8rem;
+        padding-bottom: 2rem;
+    }
+}
+/* FAQ Page Styles End Here */
 
 /* ----------------------------------------------------------------------------- */
