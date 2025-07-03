@@ -1672,7 +1672,7 @@ footer a:hover{
 .transaction-details-bg .cashback-details-row #cb-month{
     color: #bebebe;
 }
-.transaction-details-bg .exclusions h2{
+.transaction-details-bg .category-excluded h2{
     font-size: calc(1.2rem + 0.5vw);
     font-weight: 600;
     background: linear-gradient(to right, #a48149 20%, #f6d7a6 90%);
@@ -1684,7 +1684,37 @@ footer a:hover{
     margin: 0;
     margin-top: 3rem;
 }
-.transaction-details-bg .exclusions h2 i{
+.transaction-details-bg .category-excluded table{
+    width: 100%;
+    margin-top: 1rem;
+}
+.transaction-details-bg .category-excluded table th{
+    padding: 10px 0;
+    font-size: calc(0.9rem + 0.5vw);
+    color: #c8a367;
+    font-weight: 600;
+    width: 50%;
+}
+.transaction-details-bg .category-excluded table td{
+    border: 1px solid #bfa274;
+    padding: 10px;
+    font-size: calc(0.7rem + 0.5vw);
+    color: #bfa274;
+    font-weight: 600;
+}
+.transaction-details-bg .exclusions h3{
+    font-size: calc(1.2rem + 0.5vw);
+    font-weight: 600;
+    background: linear-gradient(to right, #a48149 20%, #f6d7a6 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: "EB Garamond", serif;
+    margin: 0;
+    margin-top: 3rem;
+}
+.transaction-details-bg .exclusions h3 i{
     margin-right: 5px;
 }
 .transaction-details-bg .exclusions ul{
@@ -1716,11 +1746,26 @@ footer a:hover{
     .transaction-details-bg .cashback-details-row #cb-month{
         font-size: calc(0.98rem + 0.5vw);
     }
-    .transaction-details-bg .exclusions h2{
+    .transaction-details-bg .category-excluded h2{
         font-size: calc(1.32rem + 0.5vw);
         margin-top: 2rem;
     }
-    .transaction-details-bg .exclusions h2 i{
+    .transaction-details-bg .category-excluded table{
+        margin-top: 0.6rem;
+    }
+    .transaction-details-bg .category-excluded table th{
+        padding: 7px 0;
+        font-size: calc(0.85rem + 0.5vw);
+    }
+    .transaction-details-bg .category-excluded table td{
+        padding: 9px;
+        font-size: calc(0.8rem + 0.5vw);
+    }
+    .transaction-details-bg .exclusions h3{
+        font-size: calc(1.32rem + 0.5vw);
+        margin-top: 2rem;
+    }
+    .transaction-details-bg .exclusions h3 i{
         margin-right: 3px;
     }
     .transaction-details-bg .exclusions ul{
@@ -1765,5 +1810,197 @@ footer a:hover{
     }
 }
 /* FAQ Page Styles End Here */
+
+/* ----------------------------------------------------------------------------- */
+
+/* Contact Us Page Styles Start Here */
+.contact-bg h1{
+    font-size: calc(2.5rem + 0.5vw);
+    font-weight: 600;
+    text-align: center;
+    background: linear-gradient(to right, #c49d60 35%, #f9e3bf 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: "EB Garamond", serif;
+}
+.contact-bg .contact-box{
+    background-color: #0c0c0c;
+    padding: 3rem; 
+    border-radius: 1.5rem;
+    border: 3px solid #614e2f;
+    margin-top: 2.5rem;
+}
+.contact-bg .contact-box p{
+    color: #bfa274;
+    font-size: calc(0.95rem + 0.5vw);
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+.contact-bg .contact-box .contact-box-row:last-child p{
+    margin-bottom: 0;
+}
+.contact-bg .contact-box p i{
+    margin-right: 7px;
+    font-size: calc(1rem + 0.5vw);
+}
+.contact-bg .contact-box p a{
+    text-decoration: none;
+    color: #bfa274;
+}
+.contact-bg .contact-form{
+    background-color: #0c0c0c;
+    padding: 3rem; 
+    border-radius: 1.5rem;
+    border: 3px solid #614e2f;
+    margin-top: 2.5rem;
+}
+.contact-bg .contact-form h2{
+    font-size: calc(1.3rem + 0.5vw);
+    color: #ae9263;
+    font-weight: 600;
+}
+.contact-bg .contact-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+.contact-bg .contact-form form input,
+.contact-bg .contact-form form textarea{
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1.2rem 1.5rem;
+    border-radius: 10px;
+    background-color: #0a0a08;
+    color: #bfa274;
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 600;
+    border: 2px solid #614e2f;
+}
+.contact-bg .contact-form form textarea{
+    min-height: 10rem;
+    max-height: 13rem;
+}
+.contact-bg .contact-form form input::placeholder,
+.contact-bg .contact-form form textarea::placeholder{
+    color: #bfa274;
+}
+.contact-bg .contact-form form input:focus,
+.contact-bg .contact-form form textarea:focus{
+    outline: 1px solid #614e2f;
+    background-color: #070706;
+}
+.contact-bg .contact-form form input::-webkit-inner-spin-button{
+    display: none;
+}
+.contact-bg .contact-form form button{
+    width: 40%;
+    padding: 0.6rem 0;
+    margin-top: 1rem;
+    background: linear-gradient(to right, #b58441 55%, #f3d192);
+    color: #1b1b1b;
+    border: none;
+    font-size: calc(0.9rem + 0.5vw);
+    font-weight: 600;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+.contact-bg .contact-form form button:hover{
+    background: linear-gradient(to right, #f3d192 10%, #b58441 50%);
+}
+.contact-bg .social-handles{
+    display: flex;
+    justify-content: center;
+    gap: 1.7rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+.contact-bg .social-handles a{
+    text-decoration: none;
+}
+.contact-bg .social-handles i{
+    color: #caab7a;
+    font-size: calc(0.8rem + 0.5vw);
+    background-color: #0a0a08;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+.contact-bg .social-handles i:hover{
+    color: #0a0a08;
+    background-color: #9c8154;
+}
+
+/* For Small Screens */
+@media screen and (max-width: 767px){
+    .contact-bg h1{
+        font-size: calc(1.8rem + 0.5vw);
+        margin-top: 0.7rem;
+    }
+    .contact-bg .contact-box{
+        padding: 1.2rem 1rem; 
+        border-radius: 1.3rem;
+        border: 2px solid #614e2f;
+        margin-top: 1.3rem;
+    }
+    .contact-bg .contact-box p{
+        font-size: calc(0.95rem + 0.5vw);
+        margin-bottom: 0.8rem;
+    }
+    .contact-bg .contact-box p i{
+        margin-right: 5px;
+        font-size: calc(0.95rem + 0.5vw);
+    }
+    .contact-bg .contact-form{
+        padding: 1.2rem 1rem; 
+        border-radius: 1.3rem;
+        border: 2px solid #614e2f;
+        margin-top: 1.5rem;
+    }
+    .contact-bg .contact-form h2{
+        font-size: calc(1.15rem + 0.5vw);
+    }
+    .contact-bg .contact-form form{
+        margin-top: 1.2rem;
+    }
+    .contact-bg .contact-form form input,
+    .contact-bg .contact-form form textarea{
+        margin-bottom: 0.9rem;
+        padding: 0.8rem 1rem;
+        font-size: calc(0.87rem + 0.5vw);
+        border: 1.8px solid #614e2f;
+    }
+    .contact-bg .contact-form form textarea{
+        min-height: 8rem;
+        max-height: 11rem;
+    }
+    .contact-bg .contact-form form input:focus,
+    .contact-bg .contact-form form textarea:focus{
+        outline: 0.5px solid #614e2f;
+    }
+    .contact-bg .contact-form form button{
+        width: 65%;
+        padding: 0.5rem 0;
+        margin-top: 0.3rem;
+        font-size: calc(0.9rem + 0.5vw);
+    }
+    .contact-bg .social-handles{
+        gap: 1.2rem;
+        margin-top: 2.3rem;
+        margin-bottom: 2.5rem;
+    }
+    .contact-bg .social-handles i{
+        font-size: calc(0.95rem + 0.5vw);
+        width: 35px;
+        height: 35px;
+    }
+}
+/* Contact Us Page Styles End Here */
 
 /* ----------------------------------------------------------------------------- */
