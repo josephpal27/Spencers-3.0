@@ -1675,12 +1675,63 @@ footer a:hover{
 .transaction-details-bg .exclusions h2{
     font-size: calc(1.2rem + 0.5vw);
     font-weight: 600;
-    color: #977c51;
+    background: linear-gradient(to right, #a48149 20%, #f6d7a6 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-family: "EB Garamond", serif;
     margin: 0;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
 }
 .transaction-details-bg .exclusions h2 i{
     margin-right: 5px;
+}
+.transaction-details-bg .exclusions ul{
+    margin-top: 1.3rem;
+    margin-bottom: 3.5rem;
+}
+.transaction-details-bg .exclusions ul li{
+    font-size: calc(0.6rem + 0.5vw);
+    color: #bfa274;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+}
+
+/* For Small Screens */
+@media screen and (max-width: 767px){
+    .transaction-details-head{
+        margin-top: 1.7rem;
+    }
+    .transaction-details-head h1{
+        font-size: calc(1.9rem + 0.5vw);
+        margin-bottom: 0.5rem;
+    }
+    .transaction-details-bg .cashback-details-row{
+        padding: 0.8rem 0;
+    }
+    .transaction-details-bg .cashback-details-row p{
+        font-size: calc(0.95rem + 0.5vw);
+    }
+    .transaction-details-bg .cashback-details-row #cb-month{
+        font-size: calc(0.98rem + 0.5vw);
+    }
+    .transaction-details-bg .exclusions h2{
+        font-size: calc(1.32rem + 0.5vw);
+        margin-top: 2rem;
+    }
+    .transaction-details-bg .exclusions h2 i{
+        margin-right: 3px;
+    }
+    .transaction-details-bg .exclusions ul{
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        padding-left: 1.2rem;
+    }
+    .transaction-details-bg .exclusions ul li{
+        font-size: calc(0.7rem + 0.5vw);
+        margin-bottom: 0.5rem;
+    }
 }
 /* Transaction Details Page Styles End Here */
 
