@@ -1200,45 +1200,6 @@ footer a:hover{
     font-weight: 600;
     color: #d7d7d7;
 }
-.track-progress-card .progress-bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
-}
-.track-progress-card .progress-bar .bar-left{
-    width: 27%;
-    text-align: start;
-    padding: 0.5rem 1rem;
-}
-.track-progress-card .progress-bar .bar-right{
-    width: 73%;
-    text-align: end;
-    padding: 0.5rem 1rem;
-    border-radius: 2px;
-    background: linear-gradient(
-        to right,
-        #ebc676 0%,
-        #946924 var(--progress),
-        #27241d var(--progress),
-        #27241d 100%
-    );
-    transition: background 0.3s ease;
-}
-.track-progress-card .progress-bar .bar-left p{
-    margin: 0;
-    font-size: calc(0.8rem + 0.5vw);
-    font-weight: 600;
-    color: #bfa274;
-}
-.track-progress-card .progress-bar .bar-left p i{
-    margin-right: 5px;
-}
-.track-progress-card .progress-bar .bar-right span{
-    color: #d9d9d9;
-    font-weight: 600;
-    font-size: calc(0.8rem + 0.5vw);
-}
 .track-progress-card .btn-row{
     display: flex;
     justify-content: center;
@@ -1270,8 +1231,6 @@ footer a:hover{
         font-size: calc(0.9rem + 0.5vw);
         margin-top: 0.5rem;
     }
-
-
     .track-progress-sub-head{
         margin-top: 1.3rem;
     }
@@ -1293,27 +1252,6 @@ footer a:hover{
     }
     .track-progress-card p{
         font-size: calc(0.85rem + 0.5vw);
-    }
-    .track-progress-card .progress-bar{
-        margin-bottom: 0.5rem;
-    }
-    .track-progress-card .progress-bar .bar-left{
-        width: 38%;
-        padding: 0.2rem 0;
-    }
-    .track-progress-card .progress-bar .bar-right{
-        width: 62%;
-        padding: 0.2rem 0.5rem;
-    }
-    .track-progress-card .progress-bar .bar-left p{
-        font-size: calc(0.7rem + 0.5vw);
-    }
-    .track-progress-card .progress-bar .bar-left p i{
-        margin-right: 2px;
-        font-size: calc(0.6rem + 0.5vw);
-    }
-    .track-progress-card .progress-bar .bar-right span{
-        font-size: calc(0.7rem + 0.5vw);
     }
     .track-progress-card .btn-row{
         gap: 1rem;
@@ -1340,12 +1278,6 @@ footer a:hover{
 @media screen and (min-width: 400px) and (max-width: 768px) {
     .track-progress-head h1{
         font-size: calc(1.9rem + 0.5vw);
-    }
-    .track-progress-card .progress-bar .bar-left{
-        width: 34%;
-    }
-    .track-progress-card .progress-bar .bar-right{
-        width: 66%;
     }
 }
 @media screen and (min-width: 422px) and (max-width: 768px) {
@@ -1796,6 +1728,7 @@ footer a:hover{
     background-clip: text;
     color: transparent;
     font-family: "EB Garamond", serif;
+    margin-top: 1.5rem;
 }
 .contact-bg .contact-box{
     background-color: #0c0c0c;
@@ -1820,67 +1753,6 @@ footer a:hover{
 .contact-bg .contact-box p a{
     text-decoration: none;
     color: #bfa274;
-}
-.contact-bg .contact-form{
-    background-color: #0c0c0c;
-    padding: 3rem; 
-    border-radius: 1.5rem;
-    border: 3px solid #614e2f;
-    margin-top: 2.5rem;
-}
-.contact-bg .contact-form h2{
-    font-size: calc(1.3rem + 0.5vw);
-    color: #ae9263;
-    font-weight: 600;
-}
-.contact-bg .contact-form form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1.5rem;
-}
-.contact-bg .contact-form form input,
-.contact-bg .contact-form form textarea{
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 1.2rem 1.5rem;
-    border-radius: 10px;
-    background-color: #0a0a08;
-    color: #bfa274;
-    font-size: calc(0.8rem + 0.5vw);
-    font-weight: 600;
-    border: 2px solid #614e2f;
-}
-.contact-bg .contact-form form textarea{
-    min-height: 10rem;
-    max-height: 13rem;
-}
-.contact-bg .contact-form form input::placeholder,
-.contact-bg .contact-form form textarea::placeholder{
-    color: #bfa274;
-}
-.contact-bg .contact-form form input:focus,
-.contact-bg .contact-form form textarea:focus{
-    outline: 1px solid #614e2f;
-    background-color: #070706;
-}
-.contact-bg .contact-form form input::-webkit-inner-spin-button{
-    display: none;
-}
-.contact-bg .contact-form form button{
-    width: 40%;
-    padding: 0.6rem 0;
-    margin-top: 1rem;
-    background: linear-gradient(to right, #b58441 55%, #f3d192);
-    color: #1b1b1b;
-    border: none;
-    font-size: calc(0.9rem + 0.5vw);
-    font-weight: 600;
-    border-radius: 10px;
-    text-transform: uppercase;
-}
-.contact-bg .contact-form form button:hover{
-    background: linear-gradient(to right, #f3d192 10%, #b58441 50%);
 }
 .contact-bg .social-handles{
     display: flex;
@@ -1913,7 +1785,7 @@ footer a:hover{
 @media screen and (max-width: 767px){
     .contact-bg h1{
         font-size: calc(1.8rem + 0.5vw);
-        margin-top: 0.7rem;
+        margin-top: 1rem;
     }
     .contact-bg .contact-box{
         padding: 1.2rem 1rem; 
@@ -1929,39 +1801,6 @@ footer a:hover{
         margin-right: 5px;
         font-size: calc(0.95rem + 0.5vw);
     }
-    .contact-bg .contact-form{
-        padding: 1.2rem 1rem; 
-        border-radius: 1.3rem;
-        border: 2px solid #614e2f;
-        margin-top: 1.5rem;
-    }
-    .contact-bg .contact-form h2{
-        font-size: calc(1.15rem + 0.5vw);
-    }
-    .contact-bg .contact-form form{
-        margin-top: 1.2rem;
-    }
-    .contact-bg .contact-form form input,
-    .contact-bg .contact-form form textarea{
-        margin-bottom: 0.9rem;
-        padding: 0.8rem 1rem;
-        font-size: calc(0.87rem + 0.5vw);
-        border: 1.8px solid #614e2f;
-    }
-    .contact-bg .contact-form form textarea{
-        min-height: 8rem;
-        max-height: 11rem;
-    }
-    .contact-bg .contact-form form input:focus,
-    .contact-bg .contact-form form textarea:focus{
-        outline: 0.5px solid #614e2f;
-    }
-    .contact-bg .contact-form form button{
-        width: 65%;
-        padding: 0.5rem 0;
-        margin-top: 0.3rem;
-        font-size: calc(0.9rem + 0.5vw);
-    }
     .contact-bg .social-handles{
         gap: 1.2rem;
         margin-top: 2.3rem;
@@ -1971,6 +1810,18 @@ footer a:hover{
         font-size: calc(0.95rem + 0.5vw);
         width: 35px;
         height: 35px;
+    }
+    .contact-bg footer{
+        position: absolute;
+        width: 90%;
+        bottom: 1rem;
+    }
+}
+@media screen and (min-width: 405px) and (max-width: 768px) {
+    .contact-bg footer{
+        position: absolute;
+        width: 90.5%;
+        bottom: 1rem;
     }
 }
 /* Contact Us Page Styles End Here */
