@@ -1593,6 +1593,7 @@ footer a:hover{
     justify-content: space-between;
     border-bottom: 2px solid #755b32;
     padding: 1rem 0;
+    transition: padding 0.3s ease;
 }
 .transaction-details-bg .cashback-details-row p{
     width: max-content;
@@ -1603,6 +1604,38 @@ footer a:hover{
 }
 .transaction-details-bg .cashback-details-row #cb-month{
     color: #bebebe;
+}
+.transaction-details-bg #total-spend-row{
+    cursor: pointer;
+}
+.transaction-details-bg #total-spend-row:hover{
+    background-color: #0a0a09db;
+    padding: 1rem 1rem;
+}
+.transaction-details-bg #total-spend-row:hover p{
+    color: #bebebe;
+}
+.transaction-details-bg .total-spend-table{
+    margin-top: 2.5rem;
+    overflow: hidden;
+    height: auto;
+    transition: height 0.3s ease;
+}
+.transaction-details-bg .total-spend-table.hidden{
+    height: 0;
+    margin-top: 0;
+}
+.transaction-details-bg .total-spend-table table{
+    width: 100%;
+    text-align: center;
+}
+.transaction-details-bg .total-spend-table th,
+.transaction-details-bg .total-spend-table td{
+    border: 1.5px solid #bfa274;
+    padding: 10px;
+    font-size: calc(0.55rem + 0.5vw);
+    font-weight: 600;
+    color: #bfa274;
 }
 .transaction-details-bg .exclusions h2{
     font-size: calc(1.2rem + 0.5vw);
@@ -1652,11 +1685,22 @@ footer a:hover{
     .transaction-details-bg .cashback-details-row{
         padding: 0.8rem 0;
     }
+    .transaction-details-bg #total-spend-row:hover{
+        padding: 0.8rem 0.5rem;
+    }
     .transaction-details-bg .cashback-details-row p{
         font-size: calc(0.95rem + 0.5vw);
     }
     .transaction-details-bg .cashback-details-row #cb-month{
         font-size: calc(0.98rem + 0.5vw);
+    }
+    .transaction-details-bg .total-spend-table{
+        margin-top: 1.5rem;
+    }
+    .transaction-details-bg .total-spend-table table th,
+    .transaction-details-bg .total-spend-table table td{
+        padding: 2px;
+        font-size: calc(0.4rem + 0.5vw);
     }
     .transaction-details-bg .exclusions h2{
         font-size: calc(1.32rem + 0.5vw);
@@ -1681,6 +1725,21 @@ footer a:hover{
         font-size: calc(0.7rem + 0.5vw);
         margin-left: 1.3rem;
         margin-top: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 389px) and (max-width: 767px){
+    .transaction-details-bg .total-spend-table table th,
+    .transaction-details-bg .total-spend-table table td{
+        font-size: calc(0.43rem + 0.5vw);
+    }
+}
+
+@media screen and (min-width: 410px) and (max-width: 767px){
+    .transaction-details-bg .total-spend-table table th,
+    .transaction-details-bg .total-spend-table table td{
+        padding: 3px;
+        font-size: calc(0.45rem + 0.5vw);
     }
 }
 /* Transaction Details Page Styles End Here */

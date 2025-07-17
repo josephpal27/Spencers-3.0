@@ -67,7 +67,7 @@
         <div class="cashback-details-row">
             <p id="cb-month">June 2025</p>
         </div> 
-        <div class="cashback-details-row">
+        <div class="cashback-details-row" id="total-spend-row">
             <p>Total Spend :</p>
             <p>₹4,700</p>
         </div> 
@@ -79,6 +79,55 @@
             <p>Cashback Earned :</p>
             <p>₹200</p>
         </div>
+        <!-- Total Spend Table -->
+        <div class="total-spend-table hidden">
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Bill Number</th>
+                        <th>Billing Date</th>
+                        <th>Item Description</th>
+                        <th>Quantity Bought</th>
+                        <th>Total Spend</th>
+                        <th>Eligible Spend</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>17-07-2025</td>
+                        <td>Aashirvaad Atta 5kg</td>
+                        <td>2</td>
+                        <td>600</td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>17-07-2025</td>
+                        <td>Old Monk</td>
+                        <td>1</td>
+                        <td>2000</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>17-07-2025</td>
+                        <td>Aashirvaad Atta 5kg</td>
+                        <td>10</td>
+                        <td>1000</td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>17-07-2025</td>
+                        <td>Old Monk</td>
+                        <td>1</td>
+                        <td>2000</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> 
         <!-- Exclusions -->
         <div class="exclusions">
             <h2><i class="fa-solid fa-triangle-exclamation"></i> Exclusions Explained</h2>
@@ -181,6 +230,14 @@
                 span.textContent = "Unlocked";
             }
         });
+    </script>
+
+    <script>
+        let totalSpendRow = document.getElementById("total-spend-row");
+        let totalSpendTable = document.querySelector(".total-spend-table");
+        totalSpendRow.addEventListener("click", function () {
+            totalSpendTable.classList.toggle("hidden");
+        })
     </script>
 
     <!-- JS Link -->
