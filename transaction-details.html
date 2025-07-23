@@ -77,8 +77,8 @@
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#cashback-details-accordion">
                         <div class="accordion-body">
                             <div class="cashback-details-row" id="total-spend-row">
-                                <p>Total Spend :</p>
-                                <p>₹4,700</p>
+                                <p>Total Spend : ₹4,700</p>
+                                <p><i class="fa-solid fa-angle-down"></i></p>
                             </div>
                             <div class="cashback-details-row">
                                 <p>Eligible Spend :</p>
@@ -150,8 +150,8 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#cashback-details-accordion">
                         <div class="accordion-body">
                             <div class="cashback-details-row" id="total-spend-row">
-                                <p>Total Spend :</p>
-                                <p>₹4,700</p>
+                                <p>Total Spend : ₹4,700</p>
+                                <p><i class="fa-solid fa-angle-down"></i></p>
                             </div>
                             <div class="cashback-details-row">
                                 <p>Eligible Spend :</p>
@@ -223,8 +223,8 @@
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#cashback-details-accordion">
                         <div class="accordion-body">
                             <div class="cashback-details-row" id="total-spend-row">
-                                <p>Total Spend :</p>
-                                <p>₹4,700</p>
+                                <p>Total Spend : ₹4,700</p>
+                                <p><i class="fa-solid fa-angle-down"></i></p>
                             </div>
                             <div class="cashback-details-row">
                                 <p>Eligible Spend :</p>
@@ -395,11 +395,13 @@
 
     <script>
         let totalSpendRows = document.querySelectorAll("#total-spend-row");
+        let totalSpendRowsArrows = document.querySelectorAll("#total-spend-row i");
         let totalSpendTables = document.querySelectorAll(".total-spend-table");
 
         totalSpendRows.forEach((row, index) => {
             row.addEventListener("click", function () {
                 totalSpendTables[index].classList.toggle("hidden");
+                totalSpendRowsArrows[index].classList.toggle("fa-angle-up");
             });
         });
     </script>
