@@ -1588,42 +1588,66 @@ footer a:hover{
     font-family: "EB Garamond", serif;
     margin-bottom: 2rem;
 }
-.transaction-details-bg .cashback-details-row{
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #755b32;
-    padding: 1rem 0;
-    transition: padding 0.3s ease;
+
+.transaction-details-bg .cashback-details-accordion{
+    padding: 0 !important;
+    border-radius: 3px !important;
+    border: none !important;
+    background-color: #11110f !important;
 }
-.transaction-details-bg .cashback-details-row p{
+.transaction-details-bg .cashback-details-accordion .accordion-item{
+    background-color: #11110f !important;
+}
+.transaction-details-bg .cashback-details-accordion .accordion-button{
+    padding: 1rem 1rem !important;
+}
+.transaction-details-bg .cashback-details-accordion .accordion-body{
+    padding: 0 !important;
+    background-color: #11110f !important;
+}
+.transaction-details-bg #cashback-details-accordion p{
     width: max-content;
-    font-size: calc(0.9rem + 0.5vw);
+    font-size: calc(1rem + 0.5vw);
     color: #bfa274;
     font-weight: 600;
     margin: 0;
 }
-.transaction-details-bg .cashback-details-row #cb-month{
+.transaction-details-bg #cashback-details-accordion #cb-month{
     color: #bebebe;
+    font-weight: 500;
+}
+.transaction-details-bg #cashback-details-accordion .cb-earned{
+    border-bottom: 0;
+}
+.transaction-details-bg .cashback-details-row{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #755b32;
+    padding: 1rem 1rem;
+    transition: padding 0.3s ease;
 }
 .transaction-details-bg #total-spend-row{
     cursor: pointer;
 }
 .transaction-details-bg #total-spend-row:hover{
     background-color: #0a0a09db;
-    padding: 1rem 1rem;
+    padding: 1rem 1.5rem;
 }
 .transaction-details-bg #total-spend-row:hover p{
     color: #bebebe;
 }
 .transaction-details-bg .total-spend-table{
-    margin-top: 2.5rem;
+    width: 98%;
+    margin-left: 1%;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
     overflow: hidden;
     height: auto;
     transition: height 0.3s ease;
 }
 .transaction-details-bg .total-spend-table.hidden{
     height: 0;
-    margin-top: 0;
+    margin-bottom: 0;
 }
 .transaction-details-bg .total-spend-table table{
     width: 100%;
@@ -1682,20 +1706,22 @@ footer a:hover{
         font-size: calc(1.9rem + 0.5vw);
         margin-bottom: 0.5rem;
     }
+    .transaction-details-bg .cashback-details-accordion .accordion-button{
+        padding: 0.8rem 0.7rem !important;
+    }
+    .transaction-details-bg #cashback-details-accordion p{
+        font-size: calc(0.9rem + 0.5vw);
+    }
     .transaction-details-bg .cashback-details-row{
-        padding: 0.8rem 0;
+        border-bottom: 1px solid #755b32;
+        padding: 0.8rem 0.7rem;
     }
     .transaction-details-bg #total-spend-row:hover{
-        padding: 0.8rem 0.5rem;
-    }
-    .transaction-details-bg .cashback-details-row p{
-        font-size: calc(0.95rem + 0.5vw);
-    }
-    .transaction-details-bg .cashback-details-row #cb-month{
-        font-size: calc(0.98rem + 0.5vw);
+        padding: 0.8rem 1.1rem;
     }
     .transaction-details-bg .total-spend-table{
-        margin-top: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 0.3rem;
     }
     .transaction-details-bg .total-spend-table table th,
     .transaction-details-bg .total-spend-table table td{
